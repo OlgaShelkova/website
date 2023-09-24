@@ -1,5 +1,6 @@
 body {
   background-color: #E5D4CD;
+  max-width: 1900px;
 }
 
 .header {
@@ -11,16 +12,23 @@ body {
   width: 100%;
   height: 73px;
   flex-wrap: nowrap;
-  padding: 0 10px 0 10px;
   color: #E5D4CD;
 }
 
-.menu-header li {
+li {
   display: inline-block;
   padding: 50px;
 }
 
-a {
+.home-page__line {
+  color: #E5D4CD;
+  width: 600px;
+  height: 0px;
+  stroke-width: 1px;
+  stroke: #000;
+}
+
+.link {
   text-decoration: none;
   color: #E5D4CD;
   font-family: Manrope;
@@ -30,7 +38,7 @@ a {
 }
 
 .home-page__title {
-  font-size: 6vh;
+  font-size: 4vw;
   font-family: "Crimson Pro";
   font-weight: 700;
   color: #653F4C;
@@ -45,9 +53,69 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 30vw;
+  justify-content: start;
+  align-items: end;
 }
 
 .home-page__images {
-  display: block;
-  position: -1;
+  max-width: 50vw;
+  padding: 100px 30px;
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.home-page__img {
+  position: relative;
+  padding-top: 30px;
+  padding-right: 20%;
+  width: 35vw;
+  z-index: 2;
+}
+
+.home-page__background {
+  position: absolute;
+  width: 38vw;
+  top: 165px;
+  right: 150px;
+  border-radius: 0px 100px 0px 0px;
+  opacity: 0.25;
+  z-index: -1;
+}
+
+#logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.button {
+  display: flex;
+  width: 8vw;
+  height: 5vh;
+  padding: 25px 85px 25px 85px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  border: 2px solid #653F4C;
+  background-image: url("./images/free-icon-right-arrow-2931527.png");
+  background-repeat: no-repeat;
+}
+
+.button__text {
+  text-align: start;
+  font-family: Manrope;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 2.4px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #653F4C;
+  margin-top: 200px;
+  width: 400px;
 }/*# sourceMappingURL=style.css.map */
