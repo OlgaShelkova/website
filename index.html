@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
     <head>
@@ -5,38 +6,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/styles/normalize.css" />
         <link rel="stylesheet" href="assets/styles/style.css" />
-        
         <link rel="icon" href="./assets/icons/logo64х54.svg" type="logo" />
         <title>Maria Kosmina</title>
-        <!-- рабочее название - поменять -->
+       
     </head>
     <body>
         <header class="header">
-            <a href="#">
+            <div class="header__logo">
+            <a href="./index.html">
             <img id="logo" src="./assets/logo/logo.png"/>
-        </a> 
+            </a> 
+        </div>
         <nav class="menu-header">
             <ul>
-            <li><a href="#">ОБО МНЕ</a></li>
-            <li><a href="#">МОЙ ОПЫТ</a></li>
-            <li><a href="#">УСЛУГИ</a></li>
-            <li><a href="#">ПРОДУКТЫ</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
+            <li><a class="link" href="./index2.html">ОБО МНЕ</a></li>
+            <li><a class="link" href="./index3.html">МОЙ ОПЫТ</a></li>
+            <li><a class="link" href="./index4.html">УСЛУГИ</a></li>
+            <li><a class="link" href="./index5.html">ПРОДУКТЫ</a></li>
+            <li><a class="link" href="./index6.html">КОНТАКТЫ</a></li>
         </ul>
         </nav>
     </header>
         <main class="home-page">
-        <!--секция (фото + кнопка) --> 
-        <div class="home-page">
+            <div class="home-page__text-area">
+                <h1 class="home-page__title">МАРИЯ КОСЬМИНА</h1>
+                <hr>
+                <h2  class="home-page__title">ПРЕПОДАВАТЕЛЬ АНГЛИЙСКОГО ЯЗЫКА</h2>
+                <p>Добро пожаловать в мир владения английским языком с профессиональным преподавателем!</p>
+                <a class="button button__call" href="#"><span class="button__text">Свяжись со мной!</span></a>
+            </div>
+            <div class="home-page__images">
         <img class="home-page__img" src="./assets/images/Maria_Kosmina_640х640.jpg" alt="Maria_Kosmina" />
-        <!--<img class="block__img" src="./assets/images/flowers_background_680х680.jpg" alt="Flowers" />-->
-        <h1 class="home-page__title">МАРИЯ КОСЬМИНА</h1>
-        <hr>
-        <h2  class="home-page__title ">ПРЕПОДАВАТЕЛЬ АНГЛИЙСКОГО ЯЗЫКА</h2>
-        <p >Добро пожаловать в мир владения английским языком с профессиональным преподавателем!</p>
-        <a class="button block__button" href="#"><span class="button__text">Свяжись со мной!</span></a>
-        </div>
-        </main>
+        <img class="home-page__background" src="./assets/images/flowers_background_680х680.jpg" alt="Flowers" />
+            </div>
+    </main>
         <footer>
             <div class="icons">
                 <a href="#"><img src="./assets/icons/icons8-whatsapp.svg" alt="whatsupp" /></a>
