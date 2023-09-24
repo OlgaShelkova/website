@@ -1,3 +1,27 @@
-
+.button{
+background: #E5D4CD;
+display: flex;
+width: 200px;
+height: 60px;
+padding: 27px 85px 22px 85px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 25px;
+border: 2px solid #E5D4CD;
+}
+.button__text{
+color: #653F4C;
+text-align: center;
+font-family: Manrope;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; /* 25px */
+letter-spacing: 2.4px;
+text-decoration-line: underline;
+text-transform: uppercase;
+}
 
 /*# sourceMappingURL=style.css.map */
