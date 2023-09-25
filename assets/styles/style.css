@@ -25,9 +25,21 @@ body {
   align-items: stretch;
 }
 
-li {
+.menu-header {
+  padding-right: 60px;
+}
+.menu-header li {
   display: inline-block;
-  padding: 50px;
+  padding: 30px;
+}
+
+li:hover {
+  background-color: #B18C94;
+  border-radius: 7px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 7px;
 }
 
 .home-page__line {
@@ -64,9 +76,9 @@ li {
 .home-page__text-area {
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: 35%;
   padding-top: 80px;
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 .home-page__title-area {
@@ -140,13 +152,20 @@ li {
   flex-shrink: 0;
   border-radius: 25px;
   border: 2px solid #653F4C;
-  background-image: url("./images/arrow.svg");
+  background-image: url("./images/arrows(2)");
   background-repeat: no-repeat;
   background-size: 80% auto;
+}
+.button:hover {
+  background-color: #B18C94;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .button__text {
   text-align: start;
+  text-decoration: none;
   font-family: Manrope;
   font-size: 1.1rem;
   font-style: normal;
