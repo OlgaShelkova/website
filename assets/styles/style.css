@@ -1,6 +1,5 @@
 body {
   background-color: #E5D4CD;
-  max-width: 1900px;
 }
 
 .header {
@@ -66,6 +65,7 @@ li:hover {
   font-weight: 700;
   color: #653F4C;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .home-page {
@@ -192,4 +192,59 @@ footer a {
 }
 footer .copyright {
   padding: 10px;
+}
+
+.products__block {
+  width: 370px;
+  flex-shrink: 0;
+  background-color: #653F4C;
+  padding-bottom: 50px;
+  margin: 55px 225px 55px 225px;
+}
+
+.products__subtitle {
+  color: #E5D4CD;
+  text-align: center;
+  justify-content: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  height: 84px;
+  background-color: #B18C94;
+}
+
+.products__text-area {
+  color: #EEAC96;
+  background-color: #653F4C;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1.92px;
+  margin: 10px;
+}
+
+.button_download {
+  color: #E5D4CD;
+  border-radius: 25px;
+  border: 2px solid #E5D4CD;
+  display: flex;
+  width: 120px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  margin: 10px;
+}
+.button_download .button__text {
+  color: #E5D4CD;
 }/*# sourceMappingURL=style.css.map */
