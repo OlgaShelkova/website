@@ -243,4 +243,27 @@ footer .copyright {
 
 .end {
   justify-content: flex-end;
+}
+
+.contacts {
+  max-width: 1500px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 121px 0 104px;
+}
+
+.contacts-button {
+  width: 300px;
+  height: 60px;
+  margin-top: 74px;
+}
+
+.contact-text {
+  color: #843D5B;
+  font-family: Montserrat;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: -0.4px;
 }/*# sourceMappingURL=style.css.map */
