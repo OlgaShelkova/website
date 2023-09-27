@@ -142,18 +142,15 @@ body
     flex-shrink: 0
     border-radius: 25px
     border: 2px solid $button-color
-
     img
         padding-top: 50px
     span
         padding-top: 20px
         justify-self: flex-end
-
     &:hover
         background-color: $decoration-color
         box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.30)
         backdrop-filter: blur(10px)
-
 .button__text
     text-align: center
     text-decoration: none
@@ -167,9 +164,8 @@ body
     text-transform: uppercase
     color: $dark-text-color
     width: 250px
-
-.home-page__line
-    color: $Brcolor
+.line
+    color: $header-background-color
     width: 100%
     height: 0px
     stroke-width: 1px
@@ -182,20 +178,15 @@ body
     font-style: normal
     font-weight: 400
     text-transform: uppercase
-.title
-    font-size: 3vw
-    font-family: "Crimson Pro"
-    font-weight: 700
-    color: $Brcolor
-    margin-bottom: 0
-    text-transform: uppercase
 .home-page
     display: flex
     padding: 20px
+    .title
+        margin: 0
 .home-page__text-area
     display: flex
     flex-direction: column
-    width: 35%
+    width: 55%
     padding-top: 80px
     margin-left: 150px
 .home-page__title-area
@@ -205,9 +196,9 @@ body
     flex-direction: column
     justify-content: end
     align-items: end
-    padding-top: 180px
+    padding-top: 190px
 .home-page__text
-    color: $Brcolor
+    color: $dark-text-color
     padding-top: 300px
     font-size: 16px
     font-style: normal
@@ -216,7 +207,7 @@ body
     text-transform: uppercase
 
 .home-page__subtitle
-    color: $Borcolor
+    color: $dark-text-color
     font-family: Manrope
     font-size: 20px
     font-style: normal
@@ -258,18 +249,15 @@ body
     gap: 10px
     flex-shrink: 0
     border-radius: 25px
-    border: 2px solid $Brcolor
-
+    border: 2px solid $dark-text-color
     img
         padding-top: 50px
     span
         padding-top: 20px
-
     &:hover
         background-color: $decoration-color
         box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.30)
         backdrop-filter: blur(10px)
-
 .button__text
     text-align: center
     text-decoration: none
@@ -281,7 +269,7 @@ body
     letter-spacing: 2.4px
     text-decoration-line: underline
     text-transform: uppercase
-    color: $Brcolor
+    color: $dark-text-color
     width: 250px
 footer
     display: flex
@@ -291,16 +279,31 @@ footer
         padding: 10px
     .copyright
         padding: 10px
+.products
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 20px
+    margin: 0 300px 0 300px
+    .line
+        margin: 0 150px 0 150px
+.products_title
+    display: flex
+    justify-content: center
+    margin-bottom: 20px
+
 .products__block
-    width: 370px
-    flex-shrink: 0
-    background-color: $Brcolor
+    max-width: 370px
+    background-color: $header-background-color
     padding-bottom: 50px
-    margin: 55px 225px 55px 225px
+    margin: 10px
+    display: flex
+    flex-wrap: wrap
+    border-radius: 25px 25px 0 0
+    border: 2px solid $decoration-color
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.30)
 .products__subtitle
     color: $light-text-color
     text-align: center
-    justify-content: center
     font-family: Manrope
     font-size: 20px
     font-style: normal
@@ -308,11 +311,17 @@ footer
     line-height: 125% /* 25px */
     letter-spacing: 2.4px
     text-transform: uppercase
-    height: 84px
-    background-color: $Crcolor
+    height: 90px
+    background-color: $decoration-color
+    box-sizing: border-box
+    width: 100%
+    margin-top: 0
+    padding-top: 28px
+    border-radius: 25px 25px 0 0
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.30)
 .products__text-area
-    color: $Orcolor
-    background-color: $Brcolor
+    color: $text-color
+    background-color: $button-color
     padding-bottom: 50px
     text-transform: uppercase
     text-align: center
@@ -322,7 +331,7 @@ footer
     font-weight: 400
     line-height: 125%/* 20px */
     letter-spacing: 1.92px
-    margin: 10px
+
 .button_download
     color: $light-text-color
     border-radius: 25px
@@ -330,10 +339,8 @@ footer
     display: flex
     width: 120px
     height: 60px
-    justify-content: center
-    align-items: center
     gap: 10px
     flex-shrink: 0
-    margin: 10px
+    margin-left: 200px
     .button__text
         color: $light-text-color
