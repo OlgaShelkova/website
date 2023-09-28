@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <link rel="icon" href="./assets/icons/logo64х54.svg" type="logo" />
+    <link rel="icon" href="./assets/icons/logo64х54.svg" type="image/svg+xml" />
     <title>Maria Kosmina</title>
 
 </head>
@@ -15,7 +15,7 @@
     <header class="header">
         <div class="header__logo-container">
             <a href="./index.html">
-                <img class="header__logo" src="./assets/logo/logo.png" />
+                <img class="header__logo" src="./assets/logo/logo.png" alt="logo" />
             </a>
         </div>
         <nav class="menu-header">
@@ -31,26 +31,28 @@
     <main>
         <section class="contacts">
             <div class="contacts__content">
-                <img src="./assets/images/contacts1.png" alt="flower" class="contacts__image_1">
-                <img src="./assets/images/contacts2.jpg" alt="flower" class="contacts__image_2">
-                <img src="./assets/images/contacts.jpg" alt="english teacher" class="contacts__image_3">
-                <h2 class="contacts__subtitle">Мария Косьмина</h2>
-                <hr class="contacts__line">
-                <p class="contacts__text">преподаватель английского языка</p>
+                <img src="./assets/images/contacts1.png" alt="flower" class="contacts__image image-1">
+                <img src="./assets/images/contacts2.jpg" alt="flower" class="contacts__image image-2">
+                <img src="./assets/images/contacts.jpg" alt="english teacher" class="contacts__image image-3">
+                <div class="contacts__about">
+                    <h2 class="contacts__subtitle">Мария Косьмина</h2>
+                    <hr class="contacts__line name-line">
+                    <p class="contacts__text">преподаватель английского языка</p>
+                </div>
             </div>
             <div class="contacts__buttons">
                 <h1 class="title">Контакты</h1>
-                <hr class="contacts__line">
-                <a class="button contacts-button" href="#">
-                    <img src="./assets/images/arrow.svg" alt="arrow" width="150" />
+                <hr class="contacts__line title-line">
+                <a class="button contacts__button" href="#">
+                    <img src="./assets/images/arrow.svg" alt="arrow">
                     <span class="button__text contact-text">telegram</span>
                 </a>
-                <a class="button contacts-button" href=".#">
-                    <img src="./assets/images/arrow.svg" alt="arrow" width="150" />
+                <a class="button contacts__button" href=".#">
+                    <img src="./assets/images/arrow.svg" alt="arrow">
                     <span class="button__text contact-text">instagram</span>
                 </a>
-                <a class="button contacts-button" href="#">
-                    <img src="./assets/images/arrow.svg" alt="arrow" width="150" />
+                <a class="button contacts__button" href="#">
+                    <img src="./assets/images/arrow.svg" alt="arrow">
                     <span class="button__text contact-text">whatsapp</span>
                 </a>
             </div>
@@ -58,13 +60,13 @@
         </section>
     </main>
     <footer>
-        <div class="icons">
-            <a href="#"><img src="./assets/icons/icons8-whatsapp.svg" alt="whatsupp" /></a>
-            <a href="#"><img src="./assets/icons/icons8-telegram.svg" alt="Telegram" /></a>
-            <a href="#"><img src="./assets/icons/icons8-instagram.svg" alt="Instagram" /></a>
+        <div>
+            <a href="#" class="icon"><img src="./assets/icons/icons8-whatsapp.svg" alt="whatsupp" /></a>
+            <a href="#" class="icon"><img src="./assets/icons/icons8-telegram.svg" alt="Telegram" /></a>
+            <a href="#" class="icon"><img src="./assets/icons/icons8-instagram.svg" alt="Instagram" /></a>
         </div>
         <div class="copyright">
-            <p class="copyright__text"> &copy Made by Foxes team</p>
+            <p class="copyright__text">&copy; Made by Foxes team</p>
         </div>
     </footer>
 </body>
