@@ -32,6 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: -moz-fit-content;
   height: fit-content;
   flex-wrap: nowrap;
 }
@@ -66,7 +67,8 @@ body {
   background-color: #B18C94;
   border-radius: 7px;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   padding: 7px 30px 7px 30px;
 }
 .menu-header__link {
@@ -121,6 +123,7 @@ body {
   padding: 44px 0px 23px 50px;
   border-top: solid 1px #B18C94;
   border-bottom: solid 1px #B18C94;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .about-me__title {
@@ -158,6 +161,7 @@ body {
 }
 .button img {
   padding-top: 50px;
+  width: 150px;
 }
 .button span {
   padding-top: 20px;
@@ -166,7 +170,8 @@ body {
 .button:hover {
   background-color: #B18C94;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .button__text {
@@ -184,23 +189,189 @@ body {
   width: 250px;
 }
 
+.line {
+  color: #653F4C;
+  width: 100%;
+  height: 0px;
+  stroke-width: 1px;
+  stroke: #000;
+}
+
+.menu-header__link {
+  text-decoration: none;
+  color: #E5D4CD;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.home-page {
+  display: flex;
+  padding: 20px;
+}
+.home-page .title {
+  margin: 0;
+}
+
+.home-page__text-area {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  padding-top: 80px;
+  margin-left: 150px;
+}
+
+.home-page__title-area {
+  justify-content: center;
+}
+
+.home-page__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  padding-top: 190px;
+}
+
+.home-page__text {
+  color: #843D5B;
+  padding-top: 300px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Manrope;
+  text-transform: uppercase;
+}
+
+.home-page__subtitle {
+  color: #843D5B;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 154.5%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.home-page__images {
+  max-width: 50%;
+  padding: 100px 30px;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.home-page__img {
+  position: relative;
+  padding-top: 30px;
+  padding-right: 20%;
+  width: 70%;
+  z-index: 2;
+}
+
+.home-page__background {
+  position: absolute;
+  width: 72%;
+  top: 165px;
+  right: 150px;
+  border-radius: 0px 100px 0px 0px;
+  opacity: 0.25;
+  z-index: -1;
+}
+
 footer {
   display: flex;
   align-items: center;
   padding-top: 50px;
-  margin-left: 40px;
+}
+footer a {
+  padding: 10px;
 }
 footer .copyright {
   padding: 10px;
 }
 
-.icon {
-  display: inline-block;
-  padding: 10px;
-  width: 30px;
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 0 300px 0 300px;
 }
-.icon img {
-  max-width: 100%;
+.products .line {
+  margin: 0 150px 0 150px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.products_title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.products__block {
+  max-width: 370px;
+  background-color: #653F4C;
+  padding-bottom: 50px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px 25px 0 0;
+  border: 2px solid #B18C94;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.products__subtitle {
+  color: #E5D4CD;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  height: 90px;
+  background-color: #B18C94;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 28px;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.products__text-area {
+  color: #EEAC96;
+  background-color: #653F4C;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1.92px;
+}
+
+.button_download {
+  color: #E5D4CD;
+  border-radius: 25px;
+  border: 2px solid #E5D4CD;
+  display: flex;
+  width: 120px;
+  height: 60px;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-left: 200px;
+}
+.button_download img {
+  width: 95px;
+}
+.button_download .button__text {
+  color: #E5D4CD;
+}/*# sourceMappingURL=style.css.map */
