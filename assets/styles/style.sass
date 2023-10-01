@@ -310,9 +310,12 @@ footer
     padding: 121px 0 104px
 
 .contacts__buttons
+    position: relative
     display: flex
     flex-direction: column
     align-items: flex-end
+    color: $dark-text-color
+    z-index: 5
 .contacts__button
     text-align: center
     width: 300px
@@ -321,11 +324,13 @@ footer
 
 .contacts__content
     position: relative
+    z-index: 1
 .contacts__buttons
     margin: 0 auto
 
 .contacts__image
     position: absolute
+    z-index: 1
 .image-2
     width: 90%
     margin-left: 582px
@@ -334,8 +339,11 @@ footer
     margin-left: 497px
     margin-top: 369px
 .contacts__about
+    position: absolute
     margin-left: 22px
     margin-top: 581px
+    z-index: 2
+    
 
 .contacts__text
     color: $dark-text-color
