@@ -259,47 +259,102 @@ footer
     margin: 0 auto
     text-align: center
 
-.services-title
+.services__title
     margin-top: 127px
+    margin-bottom: 0
+
+
+.services__line
+    border: 1px solid $decoration-color
+    max-width: 1000px
+    margin-bottom: 50px
+    margin-top: 0
 
 .services__container
-    max-width: 1000px
+    position: relative
+    max-width: 880px
     display: grid
-    grid-template-columns: repeat(2,1fr)
+    grid-template-columns: repeat(auto-fit, minmax(370px,1fr))
+    justify-items: center
     gap: 140px
     margin: 0 auto
-    border-top: 1px solid $decoration-color
+
 
 .services__block
     position: relative
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
+    width: 370px
+    height: 360px
+    overflow: hidden
+    transition: all 0.3s ease-in-out
+
+.services__block:hover .image 
+    transform: scale(1.5)
+    overflow: hidden
+    transition: all 0.3s linear
 
 
-.services__img
+.services__block:hover .services__hover 
+    transform: translate(0%, -50%)
+    transition: all 0.8s ease
+    background: #653F4C
+
+
+.services__img, .services__img_end
     display: flex
     position: relative
-    width: 370px
+    width: 100%
     background-color: $button-color
-    overflow: hidden
+    z-index: 1
 
+.services__image
+    z-index: 20
+
+.services__img
+    justify-content: flex-start
 .services__img_end
     justify-content: flex-end
 
 
-// .block__hover
-//     width: 100%
-//     height: 100%
-//     position: absolute
-//     transition: 0.5s
+.services__hover
+    position: absolute
+    width: 100%
+    z-index: 20
+    display: nonee
+    top: 67%
+    background: #653F4C
+    transform: translate(100%, -50%)
 
-// .block__hover:hover > .block__img
-//     position: absolute
-//     overflow: hidden
-//     top: 0
-//     left: 0
+.block-title
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 87px
+    background: $decoration-color
+
+.services__text-area
+    display: flex
+    align-items: center
+    height: 276px
+    color: $text-color
+    text-align: center
+    font-family: Manrope
+    font-size: 16px
+    font-style: normal
+    font-weight: 600
+    letter-spacing: 1.6px
+    text-transform: uppercase
+    padding: 0 10px
+
+.services__subtitle
+    color: $light-text-color
+    font-family: Montserrat
+    font-size: 20px
+    font-style: normal
+    font-weight: 600
+    letter-spacing: 2px
+    text-transform: uppercase
+    padding: 0 10px
 
 .contacts
     max-width: 1505px
