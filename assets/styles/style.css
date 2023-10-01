@@ -102,10 +102,8 @@
 
 
 
-
 .my-experience{
-width: 1920px;
-height: 1101px;
+
 background: #E5D4CD;
 }
 .my-experience__title{
@@ -115,13 +113,13 @@ text-align: center;
 display: grid;
 max-width: 1000rem;
 grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 370px 480px;
+grid-template-rows: 2fr 3fr;
 gap: 18px;
 margin: 0 auto;
 border-top: 1px solid #B18C94;
 }
 .my-experience__block1 {
-flex-direction: column;
+
 width: 505px;
 height: 739px;
 border-radius: 0px 0px 0px 100px;
@@ -223,7 +221,6 @@ border-radius: 0px 100px 0px 0px;
 grid-column: 3/4;
 grid-row: 1/2;
 position: relative;
-    margin-left: -229px;
 }
 
 .img-border-radius{
@@ -243,8 +240,7 @@ flex-direction: column;
 justify-content: center;
 background: #653f4c89 50% / cover no-repeat;
 position:absolute;
-bottom: 21%;
-
+bottom: 38%;
 }
 
 .my-experience__img_wide{
@@ -252,7 +248,7 @@ bottom: 21%;
     overflow: hidden;
     width: 788px;
     height: 352px;
-    margin-top: 26px;
+    margin-top:7px;
 }
 
 /*# sourceMappingURL=style.css.map */
