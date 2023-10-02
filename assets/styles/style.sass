@@ -258,44 +258,47 @@ footer
 
 
 .contacts
-    max-width: 1505px
+    max-width: 1565px
     display: flex
     margin: 0 auto
     justify-content: center
     align-items: center
     padding: 121px 0 104px
 .contacts__buttons
-    position: relative
+    max-width: 459px
+    height: 687px
     display: flex
     flex-direction: column
     align-items: flex-end
     color: $dark-text-color
-    z-index: 5
+    padding-right: 30px
 .contacts__button
     text-align: center
     width: 300px
     height: 60px
     margin-top: 74px
-.contacts__content
-    position: relative
-    z-index: 1
-.contacts__buttons
-    margin: 0 auto
-.contacts__image
-    position: absolute
-    z-index: 1
-.image-2
-    width: 90%
-    margin-left: 582px
-    margin-top: 180px
-.image-3
-    margin-left: 497px
-    margin-top: 369px
+.contacts__title
+    margin-top: 0
+    margin-bottom: 24px
+.contacts__grid
+    max-width: 1046px
+    display: grid
+    grid-template-columns: repeat(11, 1fr)
+    align-items: end
+    padding-left: 30px
+.contacts__item-1
+    grid-row: 1 / 2
+    grid-column: 1 / 8
+.contacts__item-2
+    grid-row: 1 / 2
+    grid-column: 7 / 11
+.contacts__item-3
+    grid-row: 1 / 2
+    grid-column: 6 / 9
 .contacts__about
     position: absolute
     margin-left: 22px
-    margin-top: 581px
-    z-index: 2
+    padding-bottom: 10px
 .contacts__text
     color: $dark-text-color
     font-family: Montserrat
@@ -410,6 +413,27 @@ footer
         padding-top: 50px
     .services__container
         gap: 70px
+    .contacts
+        flex-direction: column
+    .contacts__item-1
+        grid-row: 1 / 2
+        grid-column: 1 / 4
+    .contacts__item-2
+        grid-row: 1 / 2
+        grid-column: 3 / 7
+    .contacts__item-3
+        grid-row: 1 / 2
+        grid-column: 2 / 4
+    .contacts__grid
+        align-items: baseline
+        grid-template-columns: repeat(6, 1fr)
+    .contacts__buttons
+        align-items: center
+    .title-line
+        width: 30em
+    .contacts__about
+        margin-top: 20px
+
 
 .products
     display: grid
