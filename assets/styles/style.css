@@ -621,4 +621,114 @@ footer .copyright {
 }
 .button_download .button__text {
   color: #E5D4CD;
+}
+
+@media screen and (max-width: 1277px) {
+  .menu-header {
+    height: 1px;
+    transition: height 0.5s;
+  }
+  .menu-header ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .header {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header__icon-container {
+    display: block;
+  }
+  .header__checkbox {
+    display: block;
+  }
+  .header__checkbox:checked ~ .menu-header {
+    height: 404px;
+  }
+  .about-me__text {
+    font-size: 1.7em;
+  }
+  .about-me__image {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .about-me__background {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__checkbox {
+    left: 87%;
+    width: 45px;
+    height: 40px;
+    top: 1%;
+  }
+  .header__icon-container {
+    top: 1%;
+    left: 87%;
+    padding: 2px 6px 0px 6px;
+  }
+  .header__icon {
+    width: 30px;
+    height: 30px;
+  }
+  .header__logo {
+    padding-left: 0px;
+  }
+  .header__checkbox:checked ~ .menu-header {
+    height: 235px;
+  }
+  .about-me {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 7% 1fr 7%;
+    grid-template-areas: "image" "title" "text" "button";
+    margin: 0;
+  }
+  .about-me__image-container {
+    grid-template-rows: 1fr;
+  }
+  .about-me__button {
+    justify-self: center;
+  }
+  .about-me__button .button__text {
+    font-size: 0.9em;
+  }
+  .about-me__text {
+    width: 85%;
+    font-size: 1.2em;
+    padding: 15px 0px 15px 15px;
+  }
+  .about-me__title {
+    font-size: 2.7em;
+    margin-bottom: 5px;
+  }
+  .about-me__background {
+    border-radius: 0px;
+    background-attachment: fixed;
+    background-size: contain;
+  }
+  .about-me__image {
+    justify-self: center;
+    width: 55%;
+  }
+  .footer {
+    margin-left: 7px;
+  }
+  .footer__icon {
+    padding: 5px;
+  }
+  .menu-header li {
+    padding: 15px;
+  }
+  .menu-header__link {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-me {
+    grid-template-rows: 340px 7% 1fr 7%;
+  }
 }/*# sourceMappingURL=style.css.map */

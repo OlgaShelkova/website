@@ -493,3 +493,93 @@ footer
         width: 95px
     .button__text
         color: $light-text-color
+
+@media screen and (max-width: 1277px) 
+    .menu-header
+        height: 1px
+        transition: height 0.5s
+        ul
+            display: flex
+            flex-direction: column
+            padding: 0
+
+    .header
+        justify-content: flex-start
+        flex-direction: column
+        align-items: flex-start 
+        &__icon-container
+            display: block
+        &__checkbox
+            display: block
+        &__checkbox:checked ~ .menu-header
+            height: 404px
+
+    .about-me
+        &__text
+            font-size: 1.7em
+        &__image    
+            grid-column: 1/4
+            grid-row: 1/2
+        &__background
+            grid-column: 1/4
+            grid-row: 1/2    
+        
+@media screen and (max-width: 768px)
+    .header
+        &__checkbox
+            left: 87%
+            width: 45px
+            height: 40px
+            top: 1%
+        &__icon-container
+            top: 1%
+            left: 87%
+            padding: 2px 6px 0px 6px
+        &__icon
+            width: 30px
+            height: 30px
+        &__logo
+            padding-left: 0px
+        &__checkbox:checked ~ .menu-header
+            height: 235px
+
+    .about-me
+        grid-template-columns: 1fr
+        grid-template-rows: 2fr 7% 1fr 7%
+        grid-template-areas: "image" "title" "text" "button"
+        margin: 0
+        &__image-container
+            grid-template-rows: 1fr
+        &__button
+            justify-self: center
+            .button__text
+                font-size: 0.9em
+        &__text
+            width: 85%
+            font-size: 1.2em
+            padding: 15px 0px 15px 15px
+        &__title
+            font-size: 2.7em
+            margin-bottom: 5px
+        &__background    
+            border-radius: 0px
+            background-attachment: fixed
+            background-size: contain
+        &__image
+            justify-self: center
+            width: 55%
+            
+    .footer
+        margin-left: 7px
+        &__icon
+            padding: 5px
+
+    .menu-header
+        li 
+            padding: 15px
+        &__link
+            font-size: 14px
+
+@media screen and (max-width: 425px)
+    .about-me
+        grid-template-rows: 340px 7% 1fr 7%
