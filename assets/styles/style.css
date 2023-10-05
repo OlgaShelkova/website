@@ -297,6 +297,7 @@ body {
   margin: 0 auto;
   display: flex;
   position: relative;
+  background-size: contain;
 }
 
 .home-page__img {
@@ -352,7 +353,7 @@ body {
   margin: 0 15% 0 15%;
 }
 
-.products_title {
+.title_products {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -480,6 +481,10 @@ body {
   .header__checkbox:checked ~ .menu-header {
     height: 235px;
   }
+  .title {
+    font-size: 2.7em;
+    margin-bottom: 5px;
+  }
   .about-me {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 7% 1fr 7%;
@@ -499,10 +504,6 @@ body {
     width: 85%;
     font-size: 1.2em;
     padding: 15px 0px 15px 15px;
-  }
-  .about-me__title {
-    font-size: 2.7em;
-    margin-bottom: 5px;
   }
   .about-me__background {
     border-radius: 0px;
@@ -529,7 +530,6 @@ body {
     background-image: url(../images/Maria_Kosmina_640х640.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     background-size: 60%;
   }
   .home-page__images {
@@ -539,9 +539,10 @@ body {
     width: 100%;
     justify-content: center;
     margin: 10%;
+    padding-top: 0;
   }
   .home-page__main-text {
-    padding-top: 50%;
+    padding-top: 40%;
   }
   .home-page .button_call {
     font-size: 0.9em;
@@ -553,7 +554,20 @@ body {
   .about-me {
     grid-template-rows: 340px 7% 1fr 7%;
   }
-  .home-page__images {
-    display: none;
+  .home-page {
+    background-size: 70%;
+  }
+  .home-page__text-area {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .home-page__main-text {
+    padding-top: 50%;
+  }
+  .products {
+    margin: 0;
+  }
+  .products .button__text {
+    font-size: 0.9em;
   }
 }/*# sourceMappingURL=style.css.map */
