@@ -860,7 +860,6 @@ width: 99%;
 margin-left: 2%;
 }
 .my-experience__button {
-display: grid;
 justify-items: center;
 align-items: center;
 align-content: center;
@@ -869,7 +868,7 @@ height: 10%;
 border: 2px solid #E5D4CD;
 border-radius: 25px;
 margin-left: 40%;
-color: #E5D4CD;
+gap: 20%;
 }
 .my-experience__button img {
 width: 60%;
