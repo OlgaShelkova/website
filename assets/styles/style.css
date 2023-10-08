@@ -951,8 +951,28 @@ body {
   margin-top:1%;
 }
 
-@media screen and (max-width:1277px){
-  
+
+@media screen and (max-width: 1277px) {
+  .my-experience__content {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .my-experience__block-first {
+      grid-column: 1/3;
+      grid-row: 1/2;
+  }
+
+  .my-experience__little-block,
+  .my-experience__wide-block {
+    display: none; /* Hide these blocks еще пишу медиа-запросы */
+  }
 }
+
+
+
+
+
+
+
 
 /*# sourceMappingURL=style.css.map */
