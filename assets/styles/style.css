@@ -942,4 +942,17 @@ body {
   background: rgba(101, 63, 76, 0.537254902) 50%/cover no-repeat;
   position: absolute;
   bottom: 22%;
-}/*# sourceMappingURL=style.css.map */
+}
+.my-experience__img_wide{
+  position: relative;
+  overflow: hidden;
+  width: 95%;
+  height: 76%;
+  margin-top:1%;
+}
+
+@media screen and (max-width:1277px){
+  
+}
+
+/*# sourceMappingURL=style.css.map */
