@@ -5,28 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/styles/normalize.css" />
         <link rel="stylesheet" href="assets/styles/style.css" />
-        <link rel="icon" href="./assets/icons/logo64х54.svg" type="image/svg+xml" />
+        <link rel="icon" href="./assets/images/icons/logo64х54.svg"" type="image/svg+xml" />
       <title>Maria Kosmina</title>
     </head>
     <body>
         <header class="header">
             <div class="header__logo-container">
-            <a href="./Home-page.html">
-            <img class="header__logo" src="./assets/logo/logo.png" alt="logo"/>
-            </a> 
-        </div>
-        <nav class="menu-header">
-            <ul>
-            <li><a class="menu-header__link" href="./About-me.html">ОБО МНЕ</a></li>
-            <li><a class="menu-header__link" href="./My-experience.html">МОЙ ОПЫТ</a></li>
-            <li><a class="menu-header__link" href="./Services.html">УСЛУГИ</a></li>
-            <li><a class="menu-header__link" href="./Products.html">ПРОДУКТЫ</a></li>
-            <li><a class="menu-header__link" href="./Сontacts.html">КОНТАКТЫ</a></li>
-        </ul>
-        </nav>
-    </header>
+                <a href="./index.html">
+                    <img class="header__logo" src="./assets/images/logo/logo.png" alt="logo" />
+                </a>
+            </div>
+            <input class="header__checkbox" type="checkbox" />
+            <div class="header__icon-container"><span class="header__icon"></span></div>
+            <nav class="menu-header">
+                <ul>
+                    <li><a class="menu-header__link" href="./index.html">Главная</a></li>
+                    <li><a class="menu-header__link" href="./About-me.html">Обо мне</a></li>
+                    <li><a class="menu-header__link" href="./My-experience.html">МОЙ ОПЫТ</a></li>
+                    <li><a class="menu-header__link" href="./Services.html">УСЛУГИ</a></li>
+                    <li><a class="menu-header__link" href="./Сontacts.html">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
-                <h1 class="title products_title">Продукты</h1>
+                <h1 class="title title_products">Продукты</h1>
                 <hr class="line">
                 <div class="products">
                 <div class="products__block">
@@ -70,7 +72,7 @@
                     </a>
                 </div> 
                 <div class="products__block">
-                    <h2 class="products__subtitle">Материалы для подготовки к экзаменам</h2>
+                    <h2 class="products__subtitle">Подготовка к экзаменам</h2>
                     <p  class="products__text-area">примеры экзаменационных заданий, моделирование тестов и советы по их выполнению.</p>
                     <a class="button button_download" href="#">
                         <img src="./assets/images/arrow1.svg" alt="arrow" />
@@ -79,14 +81,14 @@
                 </div> 
             </div> 
     </main>
-    <footer>
+    <footer class="footer">
         <div>
-            <a href="#" class="icon"><img src="./assets/icons/icons8-whatsapp.svg" alt="whatsupp" /></a>
-            <a href="#" class="icon"><img src="./assets/icons/icons8-telegram.svg" alt="Telegram" /></a>
-            <a href="#" class="icon"><img src="./assets/icons/icons8-instagram.svg" alt="Instagram" /></a>
+            <a href="#" class="footer__icon"><img src="./assets/images/icons/icons8-whatsapp.svg" alt="whatsupp" /></a>
+            <a href="#" class="footer__icon"><img src="./assets/images/icons/icons8-telegram.svg" alt="Telegram" /></a>
+            <a href="#" class="footer__icon"><img src="./assets/images/icons/icons8-instagram.svg" alt="Instagram" /></a>
         </div>
-        <div class="copyright">
-            <p class="copyright__text">&copy; Made by Foxes team</p>
+        <div class="footer__copyright">
+            <p class="footer__text">&copy; Made by Foxes team</p>
         </div>
     </footer>
     </body>

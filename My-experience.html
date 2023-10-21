@@ -5,13 +5,99 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/styles/normalize.css" />
         <link rel="stylesheet" href="assets/styles/style.css" />
-        <link rel="icon" href="./assets/icons/logo64х54.svg" type="logo" />
-        <title>Daria English</title>
-        <!-- рабочее название - поменять -->
+        <link rel="icon" href="./assets/images/icons/logo64х54.svg" type="image/svg+xml" />
+        <title>Maria Kosmina</title>
     </head>
     <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
+        <header class="header">
+            <div class="header__logo-container">
+                <a href="./index.html">
+                    <img class="header__logo" src="./assets/images/logo/logo.png" alt="logo" />
+                </a>
+            </div>
+            <input class="header__checkbox" type="checkbox" />
+            <div class="header__icon-container"><span class="header__icon"></span></div>
+            <nav class="menu-header">
+                <ul>
+                    <li><a class="menu-header__link" href="./index.html">Главная</a></li>
+                    <li><a class="menu-header__link" href="./About-me.html">ОБО МНЕ</a></li>
+                    <li><a class="menu-header__link" href="./Services.html">УСЛУГИ</a></li>
+                    <li><a class="menu-header__link" href="./Products.html">ПРОДУКТЫ</a></li>
+                    <li><a class="menu-header__link" href="./Сontacts.html">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="my-experience">
+                <h1 class="title my-experience__title">Мой опыт</h1>
+                <div class="my-experience__content">
+                    <div class="my-experience__block-first">
+                        <p class="my-experience__text">
+                            Я имела удовольствие работать с учениками всех возрастов и уровней подготовки.
+                        </p>
+                        <p class="my-experience__text-arrow">
+                            Мой опыт включает в себя:
+                            <img class="my-experience__arrow" src="./assets/images/arrow1.svg" alt="arrow1" />
+                        </p>
+                        <a class="button my-experience__button" href="#">
+                            <img src="./assets/images/arrow1.svg" alt="arrow" />
+                            <span class="button__text button__text_my-experience">Свяжись со мной</span>
+                        </a>
+                    </div>
+                    <div class="my-experience__little-block">
+                        <img class="my-experience__img" src="./assets/images/children.jpg" alt="children" />
+
+                        <div class="my-experience__little-content">
+                            <p class="my-experience__text my-experience__text_on-pictute">
+                                Преподавание английского языка в Международной школе “Language Masters”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-experience__little-block my-experience__little-block_border-radius">
+                        <img
+                            class="my-experience__img my-experience__img_border-radius"
+                            src="./assets/images/school.jpg"
+                            alt="school"
+                        />
+
+                        <div class="my-experience__little-content">
+                            <p class="my-experience__text my-experience__text_on-pictute">
+                                Подготовка студентов к международным экзаменам, таким как Cambridge English: Advanced
+                                (CAE) и IELTS
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-experience__wide-block">
+                        <img
+                            class="my-experience__img my-experience__img_wide"
+                            src="./assets/images/studying.jpg"
+                            alt="studying"
+                        />
+                        <div class="my-experience__wide-block-content">
+                            <p class="my-experience__text my-experience__text_on-pictute">
+                                Разработка индивидуальных учебных программ в соответствии с потребностями студентов,
+                                включая бизнес-английский для корпоративных клиентов
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div>
+                <a href="#" class="footer__icon"
+                    ><img src="./assets/images/icons/icons8-whatsapp.svg" alt="whatsupp"
+                /></a>
+                <a href="#" class="footer__icon"
+                    ><img src="./assets/images/icons/icons8-telegram.svg" alt="Telegram"
+                /></a>
+                <a href="#" class="footer__icon"
+                    ><img src="./assets/images/icons/icons8-instagram.svg" alt="Instagram"
+                /></a>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__text">&copy; Made by Foxes team</p>
+            </div>
+        </footer>
     </body>
 </html>
