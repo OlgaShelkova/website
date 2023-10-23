@@ -639,7 +639,7 @@ body {
   border-top: 1px solid #B18C94;
 }
 .my-experience__block-first {
-  max-width: 100%;
+  max-width: 90%;
   max-height: 84%;
   border-radius: 0px 0px 0px 100px;
   background: #653F4C;
@@ -700,10 +700,10 @@ body {
 }
 .my-experience__button img {
   width: 60%;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 .my-experience__little-block {
-  width: 100%;
+  width: 90%;
   height: 93%;
   display: grid;
   grid-column: 2/3;
@@ -716,6 +716,7 @@ body {
   grid-column: 3/4;
   grid-row: 1/2;
   position: relative;
+  margin-left: -22%;
 }
 .my-experience__little-content {
   display: flex;
@@ -739,7 +740,7 @@ body {
 .my-experience__img_wide {
   position: relative;
   overflow: hidden;
-  width: 95%;
+  width: 80%;
   height: 76%;
   margin-top: 1%;
 }
@@ -748,10 +749,11 @@ body {
   grid-column: 2/4;
   grid-row: 2/3;
   position: relative;
+
 }
 .my-experience__wide-block-content {
   display: flex;
-  width: 95%;
+  width: 80%;
   height: 30%;
   flex-direction: column;
   justify-content: center;
